@@ -1,0 +1,9 @@
+// tapcolor
+@mixin setTapColor($c:rgba(0,0,0,0)) {
+    -webkit-tap-highlight-color: $c;
+}
+// user action
+@mixin noSelect() {
+    -webkit-touch-callout: none;
+    user-select: none;
+}
