@@ -1,2 +1,1 @@
-// @prepros-append ./polyfill/modernizr.js
-console.log(1111);
+// @prepros-prepend ./vendor/layer.js

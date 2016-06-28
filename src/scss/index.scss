@@ -1,6 +1,5 @@
 @import './base/_normalize';
-
-.s {
-	display: flex;
-}
+@import './mixin/mobile';
+@import './utils/loading';
+@import './vendor/layer';
 

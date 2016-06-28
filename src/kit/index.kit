@@ -6,22 +6,28 @@
     <title>Document</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
-  
-    <link rel="stylesheet" href="../dist/css/min/index.css">
+    <link rel="stylesheet" href="../dist/css/index.css">
+    <!-- Get dpi && set rem && modernizr -->
+    <script src="../dist/js/critical.bundle.js"></script>
 </head>
 <body>
-	<div style="background: blue;height: 38px;line-height: 38px;"><a href="##" style="color: white">测试</a></div>
-	<div class="s">
-		IE6-9不支持该属性，但支持使用标签属性onselectstart="return false;"来达到 user-select:none的效果；Safari和Chrome也支持该标签属性；直到Opera12.5仍然不支持该属性，但和IE6-9一样，也支持使用私有的标签属性 unselectable="on" 来达到user-select:none 的效果；unselectable 的另一个值是 off；
-		<div class="ss"></div>
-	</div>
-	<!-- <div class="s1">
-		<div class="wraper">
-			<div class="dummy"></div>
-			<div class="adsImg">
-				<img src="btn.jpg" width="100%" alt="">
-			</div>
-		</div>
-	</div> -->
+	<button id="layer">Layer</button>
+    <!-- @import "./utils/loading" -->
+    <script src="http://cdn.bootcss.com/jquery/2.1.0/jquery.js"></script>
+    <script src="../dist/js/index.bundle.js"></script>
+    <script>
+        $("#layer").on("click", function() {
+            layer.open({
+    content: '你是想确认呢，还是想取消呢？',
+    btn: ['确认', '取消'],
+    shadeClose: false,
+    yes: function(){
+        layer.open({content: '你点了确认', time: 1});
+    }, no: function(){
+        layer.open({content: '你选择了取消', time: 1});
+    }
+});
+        });
+    </script>
 </body>
 </html>
