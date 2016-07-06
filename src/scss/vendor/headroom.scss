@@ -1,0 +1,32 @@
+// **** headroom animate  Shine 2016/7/1 ****
+.animated {
+    will-change: transform;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-145px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animated.slideDown {
+    animation-name: slideDown;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-145px);
+    }
+}
+
+.animated.slideUp {
+    animation-name: slideUp;
+}

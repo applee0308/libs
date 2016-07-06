@@ -447,9 +447,9 @@ textarea {
 }
 
 .x-spinner-item {
-  width: 8px;
-  height: 15px;
-  background: #fff;
+  width: .5em;
+  height: .75em;
+  background: silver;
   margin-right: 1px;
   -webkit-animation: bounce-middle 0.3s ease-in-out infinite alternate;
           animation: bounce-middle 0.3s ease-in-out infinite alternate;
@@ -745,4 +745,38 @@ textarea {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+html {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 374px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+h1 {
+  font-size: .7rem;
+  background: #f5f5f9;
+}
+
+.wp {
+  max-width: 640px;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+  background: #f5f5f9;
+}
+
+.kk {
+  left: 0;
+  width: 100%;
 }

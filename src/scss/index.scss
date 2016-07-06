@@ -1,5 +1,30 @@
 @import './base/_normalize';
-@import './mixin/mobile';
 @import './utils/loading';
 @import './vendor/layer';
+@import './mixin/media';
+
+html {
+	font-size: 20px;
+	@include media-sm {
+		font-size: 0.8 * 20px;
+	}
+	@include media-md {
+		font-size: 1.2 * 20px;
+	}
+}
+h1 {
+	font-size: .7rem;
+	background: #f5f5f9;
+}
+.wp {
+	max-width: 640px;
+	min-width: 320px;
+	min-height: 100%;
+	margin: 0 auto;
+	background: #f5f5f9;
+}
+.kk {
+	left: 0;
+	width: 100%;
+}
 

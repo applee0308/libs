@@ -1,0 +1,14 @@
+// base on iphone 6 && 6s
+// ** device-width <= 374 **
+@mixin media-sm() {
+    @media screen and (max-width: 374px) {
+        @content;
+    }
+}
+
+// ** device-width >= 641 **
+@mixin media-md() {
+    @media screen and (min-width: 641px) {
+        @content;
+    }
+}

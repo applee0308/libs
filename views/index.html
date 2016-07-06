@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -7,32 +8,20 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="../dist/css/index.css">
-    <!-- Get dpi && set rem && modernizr -->
-    <script src="../dist/js/critical.bundle.js"></script>
 </head>
+
 <body>
-	<button id="layer">Layer</button>
-    <section class="splashScreen hidden">
-	<div class="x-spinner">
-		<div class="x-spinner-item"></div>
-		<div class="x-spinner-item"></div>
-		<div class="x-spinner-item"></div>
-	</div>
-</section>    <script src="http://cdn.bootcss.com/jquery/2.1.0/jquery.js"></script>
+    <button id="layer">Layer</button>
+    <script src="http://cdn.bootcss.com/jquery/2.1.0/jquery.js"></script>
     <script src="../dist/js/index.bundle.js"></script>
     <script>
-        $("#layer").on("click", function() {
-            layer.open({
-    content: '你是想确认呢，还是想取消呢？',
-    btn: ['确认', '取消'],
-    shadeClose: false,
-    yes: function(){
-        layer.open({content: '你点了确认', time: 1});
-    }, no: function(){
-        layer.open({content: '你选择了取消', time: 1});
-    }
-});
+    $("#layer").on("click", function() {
+        layer.open({
+            type: 2,
+            // shadeClose: false
         });
+    });
     </script>
 </body>
+
 </html>

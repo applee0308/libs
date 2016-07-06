@@ -1,2 +1,1 @@
-// @prepros-prepend ./polyfill/modernizr.js
-// @prepros-prepend ./polyfill/viewport.js
+// @prepros-prepend ./polyfill/viewport-without-dpr.js
