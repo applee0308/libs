@@ -208,3 +208,18 @@
 .layermend::after {
     transform: rotate(-45deg);
 }
+@keyframes bounce-middle {
+  0% {
+    visibility: visible;
+    transform: scaleY(1) translateZ(0);
+    // opacity: 0.2;
+    // transform: translateZ(0);
+  }
+
+  100% {
+    visibility: visible;
+    // opacity: 1;
+    // transform: translateZ(0);
+    transform: scaleY(2.5) translateZ(0);
+  }
+}
