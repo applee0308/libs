@@ -1,0 +1,7 @@
+@import './base/_vars.scss';
+@import './base/_normalize.scss';
+@import './mixin/_rem.scss';
+@import './mixin/_fontSize.scss';
+h1 {
+	font-size: pr(12px)
+}
